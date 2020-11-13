@@ -1,0 +1,9 @@
+#ihf-main-container.ihf-color-scheme-gray .ihf-grid-result-price a,
+#ihf-main-container.ihf-color-scheme-light-blue .ihf-grid-result-price a {
+	color:#000;
+}
+
+#ihf-main-container.ihf-color-scheme-gray .ihf-grid-result-price a:hover,
+#ihf-main-container.ihf-color-scheme-light-blue .ihf-grid-result-price a:hover {
+	color:#585858;
+}

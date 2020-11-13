@@ -1,0 +1,151 @@
+<style type="text/css">
+body {
+	width:630px;
+	height:596px;
+	padding: 0;
+	margin: 4px 0 0 4px;
+	overflow: hidden;
+}
+#instruction-container {
+	width: 97%;
+	height: 92%;
+	background: #fff;
+	
+	font-family: calibri;
+}
+#instruction-left {
+	width: 50%;
+	float: left;
+	height: 100%;
+	overflow: auto;
+}
+	#instruction-left h2 {
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);	
+		width: 200px;
+		text-align: center;
+		background: #222222;
+		color:#fff;
+		position: absolute;
+		top: 238px;
+		left: -235px;
+		padding: 10px 170px;
+	}
+	#instruction-left ul {	
+		margin-left: 25px;
+	}
+#instruction-right {
+	float: left;
+	width: 48%;
+}
+	#instruction-right h2 {
+		width: 195px;
+		text-align: center;
+		background: #222222;
+		color:#fff;
+		position: absolute;
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		margin-left: 3px;
+
+	}
+	#instruction-right .details {
+		margin: 22px 10px 0 60px;
+		overflow-y: auto;
+		height:97%;
+	}
+	#instruction-right #instruction-up {
+		height: 46%;
+		border-bottom: 1px solid #ccc;
+		width: 296px;
+	}
+		#instruction-right #instruction-up h2 {
+			top: 103px;
+			left: 209px;
+			padding: 10px 26.5px;
+			
+		}	
+	#instruction-right #instruction-down h2 {
+		top: 386px;
+		left: 212px;
+		padding: 10px 23.5px;
+	}	
+
+</style>
+<div id="instruction-container">
+	<div id="instruction-left">
+	<h2>Lists of Shorcodes</h2>
+	<ul style="font-family:open sans,sans-serif; font-size:12px; list-style:none; float:left; width:77%;">
+		<li><b>Loop</b></li>
+		<li style="padding:2px; margin-left:10px;"><strong>[<span style="color:#008000">idx_loopstart</span>]</strong><br />
+		<em>Start of Loop</em></li>
+		<li style="padding:2px; margin-left:10px ;"><strong>[<span style="color:#008000">idx_loopend</span>]</strong><br />
+		<em>End of Loop</em></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">link</span>]</strong><br />
+		<em>Listing Details URL</em></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">photo_url</span>]</strong><br />
+		<em>Image URL</em></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_ID</span>]</strong><br />
+		<em>Listing ID</em></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">address</span>]</strong><br />
+		<em>Street number and street name</em></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">city</span>]</strong><br />
+		<em>City</em></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">state</span>]</strong><br />
+		<em>State</em></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">state_short</span>]</strong><br />
+		<em>State Abbreviation</em></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">zipcode</span>]</strong><br />
+		<em>Zip Code</em></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">price</span>]</strong><br />
+		<em>Price</em></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">beds</span>]</strong><br />
+		<em>Beds</em></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">baths</span>]</strong><br />
+		<em>baths</em></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">remarks</span>]</strong><br />
+		<em>Remarks</em></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">status</span>]</strong><br />
+		<em>Status</em></li>
+	</ul>
+	</div>
+	<div id="instruction-right">
+		<div id="instruction-up">
+			<h2>Instruction</h2>
+			<div class="details">
+				<p>
+				1. You need to configure the widget based on your preference.
+				On the HTML part, put the static html and change the required data using the list of shortcodes below.
+				</p>
+				<p>
+				2. You need to put the repeated HTML part inside the loop.<br/>
+				Sample:<br/>
+				[idx_loopstart]<br/>
+					-insert repeated HTML part here-<br/>
+				[idx_loopend]
+				</p>
+			</div>
+		</div>
+		<div id="instruction-down">
+			<div class="details">
+				<h2>Sample HTML</h2><br/>&lt;div&gt;Widget title&lt;/div&gt;<br/>&lt;ul&gt;<br/>[idx_loopstart]<br/>&lt;li&gt;<br/> &lt;h2&gt;&lt;a href=&quot;[link]&quot;&gt;[address]&lt;/a&gt;&lt;h2&gt;&lt;br/&gt;<br/> 
+				&lt;div&gt;&lt;img src="[photo_url]" /&gt;&lt;/div&gt;<br/> &lt;div&gt; [price]&lt;/div&gt;<br/>&lt;/li&gt;<br/>[idx_loopend]<br/>&lt;/ul&gt;
+			</div>
+		</div>
+	</div>
+	<div style="clear:both"></div>
+
+</div>

@@ -1,0 +1,142 @@
+<style type="text/css">
+body {
+	width:630px;
+	height:596px;
+	padding: 0;
+	margin: 4px 0 0 4px;
+	overflow: hidden;
+}
+#instruction-container {
+	width: 97%;
+	height: 97%;
+	background: #fff;
+	
+	font-family: calibri;
+}
+#instruction-left {
+	width: 50%;
+	float: left;
+	height: 100%;
+	overflow: auto;
+}
+	#instruction-left h2 {
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);	
+		width: 200px;
+		text-align: center;
+		background: #222222;
+		color:#fff;
+		position: absolute;
+		top: 238px;
+		left: -235px;
+		padding: 10px 170px;
+	}
+	#instruction-left ul {	
+		margin-left: 25px;
+	}
+#instruction-right {
+	float: left;
+	width: 48%;
+}
+	#instruction-right h2 {
+		width: 195px;
+		text-align: center;
+		background: #222222;
+		color:#fff;
+		position: absolute;
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		margin-left: 3px;
+
+	}
+	#instruction-right .details {
+		margin: 22px 10px 0 60px;
+		overflow-y: auto;
+		height:97%;
+	}
+	#instruction-right #instruction-up {
+		height: 46%;
+		border-bottom: 1px solid #ccc;
+		width: 296px;
+	}
+		#instruction-right #instruction-up h2 {
+			top: 103px;
+			left: 209px;
+			padding: 10px 26.5px;
+			
+		}	
+	#instruction-right #instruction-down h2 {
+		top: 386px;
+		left: 212px;
+		padding: 10px 23.5px;
+	}	
+</style>
+<div id="instruction-container">
+	<div id="instruction-left">
+		<h2>Lists of Shorcodes</h2>
+			<ul style="font-family:open sans,sans-serif; font-size:12px; list-style:none; float:left; width:40%;">
+				<li style="padding:2px;"><strong>[<span style="color:#008000">ihf_loopstart</span>]</strong><br />
+				<em>IHF Loop Start</em></li>
+				<li style="padding:2px;"><strong>[<span style="color:#008000">ihf_loopend</span>]</strong><br />
+				<em>IHF Loop End</em></li>
+				<li style="padding:2px;"><strong>[<span style="color:#008000">price</span>]</strong><br />
+				<em>List Price</em></li>
+				<li style="padding:2px;"><strong>[<span style="color:#008000">link</span>]</strong><br />
+				<em>Listing URL</em></li>
+
+				<li style="padding:2px;"><strong>[<span style="color:#008000">address1</span>]</strong><br />
+				<em>House Number and Street Name</em></li>
+				<li style="padding:2px;"><strong>[<span style="color:#008000">address2</span>]</strong><br />
+				<em>City, State and Zip</em></li>
+				<li style="padding:2px;"><strong>[<span style="color:#008000">bedroom</span>]</strong><br />
+				<em>Bedroom Information</em></li>
+				<li style="padding:2px;"><strong>[<span style="color:#008000">bathroom</span>]</strong><br />
+				<em>Bathroom Information</em></li>
+				<li style="padding:2px;"><strong>[<span style="color:#008000">imagesrc</span>]</strong><br />
+				<em>Image URL</em></li>
+			</ul>
+	</div>
+	<div id="instruction-right">
+		<div id="instruction-up">
+			<h2>Instruction</h2>
+			<div class="details">
+				<p>
+				1. <b>Target element</b> is the ID or Class of the html element where you want the content to append.
+				</p>
+				<p>
+				2. You need to configure the widget based on your desired layout.
+				On the HTML part, put the static html and change the required data using the list of shortcodes below.
+				</p>
+				<p>
+				3. You need to put the repeated HTML part inside the loop.<br/>
+				Sample:<br/>
+				[ihf_loopstart]<br/>
+					-insert repeated HTML part here-<br/>
+				[ihf_loopend]
+				</p>
+				
+			</div>
+		</div>
+		<div id="instruction-down">
+			<div class="details">
+				<h2>Sample HTML</h2><br>
+
+				&lt;div&gt;<br/>	
+				&lt;div&gt;Widget title&lt;/div&gt;
+				<br/>
+				[ihf_loopstart]
+				<br/>
+				&lt;div&gt;<br/>Address: &lt;a href=&quot;[link]&quot;&gt;[address1] [address2]&lt;/a&gt;<br/>&lt;/div&gt;
+				<br/>
+				&lt;div&gt;Price: [price]&lt;/div&gt;
+				<br/>
+				[ihf_loopend]
+				<br/>
+				&lt;/div&gt;
+				
+			</div>
+		</div>
+	</div>
+	<div style="clear:both"></div>
+
+</div>

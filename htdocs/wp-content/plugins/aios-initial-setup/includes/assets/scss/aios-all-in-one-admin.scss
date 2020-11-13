@@ -1,0 +1,714 @@
+$main-color			: #009bbb;
+$main-color-light	: #17A8E3;
+$secondary-color	: #fb7a03;
+$dark-color			: #333333;
+$heading-font 		: 'Roboto Condensed', 'Roboto', sans-serif;
+$stack-font 		: 'Roboto', sans-serif;
+$info-color			: #ff9966;
+$error-color		: #fb0303;
+$black-color		: #000000;
+$white-color		: #FFFFFF;
+$active-color 		: #269ecb;
+$inactive-color 	: #d6d6d6;
+$tabs-background 	: #f2f6fa;
+
+
+@mixin clear-both() {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+@mixin border-round() {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+@mixin border-switch() {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+@mixin border-circle() {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+#footer-thankyou{
+	font-size: 0 !important;
+	&::after{
+		content: 'Thank you for creating with AgentImage';
+		font-size: 14px !important;
+	}
+}
+
+.media-modal-content{
+	.search-form{
+		margin-bottom: 0 !important;
+	}
+}
+
+#wp-admin-bar-wp-logo{
+	display: none !important;
+}
+#wp-auth-check-wrap{
+	#wp-auth-check{
+		width: 500px !important;
+		left: 0 !important;
+		right: 0 !important;
+		margin: 0 auto !important;
+	}
+}
+
+.aios-shortcode {
+	h3{
+		font-weight: 700 !important;
+		font-size: 16px !important;
+		margin: 15px 0 !important;
+	}
+	p {
+		font-size: 13px;
+	}
+	ul{
+		display: list-item;
+		font-size: 13px;
+		line-height: 25px;
+		margin-left: 40px;
+		li {
+			display: list-item;
+			list-style: disc;
+		}
+	}
+	.auto-highlight[type=text],
+	textarea.auto-highlight{
+		float: none !important;
+		background: #ececec !important;
+		font-size: 14px;
+		line-height: 22px;
+		padding: 10px 20px 12px 15px !important;
+		height: auto !important;
+		letter-spacing: 0.4px;
+		resize: none;
+	}
+	._row {
+		display: block;
+		border-top: solid 1px #d0d0d0;
+		margin-top: 20px;
+		&:nth-of-type(1){
+			border-top: none;
+			margin-top: 0;
+		}
+	}
+	&:after{
+		content: '';
+		clear: both;
+	}
+}
+
+#aios-shortcode-popup{
+	display: none;
+	position:relative;
+	z-index: 1001;
+	._overlay{
+		content: '';
+		display: inline-block;
+		background: rgba(0,0,0,0.5);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 0;
+	}
+	.aios-shortcode-popup-container{
+		display: block;
+		background: #FFF;
+		position: fixed;
+		max-width: 970px;
+		width: 100%;
+		height: 80vh;
+		top: 10%;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 10px 0;
+		z-index: 1001;
+		border-radius: 10px !important;
+		@media(max-width:1200px){
+     		max-width: 700px;
+     		left: 58%;
+		}
+		@media(max-width:991px){
+			width: 90%;
+			left: 50%;
+		}
+		#wpui-container .wpui-container{
+			width: 100%;
+		}
+		._close{
+			display: inline-block;
+			position: absolute;
+			top: 50%;
+			right: 30px;
+			cursor: pointer;
+			font-size: 24px;
+			transform: translateY(-50%);
+		}
+		h4{
+			display: block;
+			background: #FFF;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			border-bottom: solid 1px #e0e0e0;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 3;
+			margin: 0;
+			padding: 20px 30px;
+		}
+		.aios-shortcode{
+			position: relative;
+			max-height: 80vh;
+			padding-top: 70px;
+			padding-left: 15px;
+			padding-right: 15px;
+			z-index: 1;
+			overflow-y: scroll;
+		}
+	}
+}
+
+/**
+ * Form Add New Tag
+ */
+.edit-tags-php{
+	.search-form{
+		margin-bottom: 30px;
+	}
+	.form-wrap{
+		display: block;
+		font-family: "Roboto",sans-serif;
+		font-size: 16px;
+		color: #666666;
+		box-shadow: 0 1px 1px rgba(0,0,0,.04);
+		*{box-sizing: border-box;}
+		h2{
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+			background-color: #f5f5f5;
+			display: block;
+			margin: 0 !important;
+			padding: 15px;
+			font-weight: 700;
+			font-size: 14px;
+			color: #393b3e;
+		}
+		form{
+			display: block;
+			margin: 0 !important;
+			background-color: #fff;
+			box-shadow: 0 2px 0 #E6E6E6;
+			border-bottom-left-radius: 3px;
+			border-bottom-right-radius: 3px;
+			.form-field{
+				display: block;
+				margin: 0 !important;
+				padding: 15px !important;
+				border-bottom: 1px solid #E6E6E6;
+				&::after{
+					@include clear-both();
+				}
+				label{
+					display: block;
+					margin: 0 0 2px !important;
+					padding: 0 !important;
+					font-size: 15px;
+					font-weight: 500;
+					color: #333;
+				}
+				p{
+					display: block;
+					font-style: normal !important;
+					font-size: 13px;
+					color: #888;
+					line-height: 22px;
+					margin: 9px 0 0 !important;
+					padding: 0 !important;
+				}
+				input[type=email], 
+				input[type=number], 
+				input[type=password], 
+				input[type=search], 
+				input[type=tel], 
+				input[type=text], 
+				input[type=url], 
+				textarea, 
+				select {
+					display: block;
+					height: 34px;
+					width: 100%;
+					margin: 5px 0;
+					padding: 0 10px;
+					border-radius: 3px;
+					border: 1px solid #c5c5c5;
+					box-shadow: 0 0 0 transparent;
+					background-color: #fff;
+					color: #32373c;
+					outline: 0;
+					transition: 50ms border-color ease-in-out;
+				}
+				textarea{
+					min-height: 150px;
+					padding: 10px;
+				}
+			}
+			.aios-default-button,
+			.aios-secondary-button,
+			.aios-disabled-button,
+			.button-primary{
+				-webkit-appearance: none;
+				float: left;
+				border: 0;
+				background: $main-color;
+				width: auto;
+				min-width: 200px;
+				height: 39px;
+				padding: 0 15px;
+				font-weight: 500;
+				font-size: 15px;
+				color: $white-color;
+				text-align: center;
+				text-decoration: none;
+				line-height: 39px !important;
+				outline: 0;
+				transition: opacity 0.2s linear;
+				cursor: pointer;
+				border-radius: 3px;
+				&:hover {
+					opacity: 0.7;
+				}
+				&:disabled,
+				&.disabled {
+					background-color: $inactive-color !important;
+				}
+				&.setting-remove {
+					background-color: #757575 !important;
+				}
+				@media only screen and (max-width: 991px){
+					min-width: initial;
+					width: 100%;
+				}
+			}
+			
+			.button-primary,
+			.aios-secondary-button{background: $secondary-color;}
+			.aios-disabled-button{background-color: #757575 !important;}
+			p.submit{
+				display: block;
+				margin: 0 !important;
+				padding: 15px !important;
+				&::after{
+					@include clear-both();
+				}
+				.button-primary{
+					text-transform: uppercase !important;
+					text-shadow: none !important;
+					box-shadow: none !important;
+				}
+			}
+		}
+	}	
+}
+
+/**
+ * Form Edit Tag
+ */
+ .term-php #wpbody-content{
+	*{box-sizing: border-box;}
+	.wrap{
+		display: block;
+		font-family: "Roboto",sans-serif;
+		font-size: 16px;
+		color: #666666;
+		box-shadow: 0 1px 1px rgba(0,0,0,.04);
+		h1{
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+			background-color: #f5f5f5;
+			display: block;
+			max-width: 800px;
+			margin: 0 !important;
+			padding: 15px;
+			font-weight: 700;
+			font-size: 14px;
+			color: #393b3e;
+		}
+		form{
+			display: flex;
+			flex-wrap: wrap;
+			width: 100% !important;
+			margin: 0 !important;
+			background-color: #fff;
+			box-shadow: 0 2px 0 #E6E6E6;
+			border-bottom-left-radius: 3px;
+			border-bottom-right-radius: 3px;
+			&::after{
+				@include clear-both();
+			}
+			.form-field{
+				display: block;
+				margin: 0 !important;
+				padding: 15px !important;
+				border-bottom: 1px solid #E6E6E6;
+				&::after{
+					@include clear-both();
+				}
+				label{
+					display: block;
+					margin: 0 0 2px !important;
+					padding: 0 !important;
+					font-size: 15px;
+					font-weight: 500;
+					color: #333;
+				}
+				p{
+					display: block;
+					font-style: normal !important;
+					font-size: 13px;
+					color: #888;
+					line-height: 22px;
+					margin: 9px 0 0 !important;
+					padding: 0 !important;
+				}
+				input[type=email], 
+				input[type=number], 
+				input[type=password], 
+				input[type=search], 
+				input[type=tel], 
+				input[type=text], 
+				input[type=url], 
+				textarea, 
+				select {
+					display: block;
+					height: 34px;
+					width: 550px !important;
+					margin: 5px 0;
+					padding: 0 10px;
+					border-radius: 3px;
+					border: 1px solid #c5c5c5;
+					box-shadow: 0 0 0 transparent;
+					background-color: #fff;
+					color: #32373c;
+					outline: 0;
+					transition: 50ms border-color ease-in-out;
+				}
+				textarea{
+					min-height: 150px;
+					padding: 10px;
+				}
+				/**
+				 * WP Editor
+				 */
+				.wp-editor-wrap{
+					*{box-sizing: content-box !important;}
+					.wp-editor-container{
+						.wp-switch-editor{
+							height: 28px !important;
+						}
+						.wp-editor-area{
+							border-radius: 0 !important;
+							border-top: 0 !important;
+							margin-left: -1px !important;
+							margin-right: -1px !important;
+							border: solid 1px #ebebeb !important;
+							width: 100% !important;
+							padding: 0 !important;
+							margin: 0 0 0 -1px !important;
+						}
+						&:after{@include clear-both();}
+					}
+				}
+			}
+			.aios-default-button,
+			.aios-secondary-button,
+			.aios-disabled-button,
+			.button-primary,
+			#delete-link .delete{
+				-webkit-appearance: none;
+				float: left;
+				border: 0;
+				background: $main-color;
+				width: auto;
+				min-width: 200px;
+				height: 39px;
+				padding: 0 15px;
+				font-weight: 500;
+				font-size: 15px;
+				color: $white-color;
+				text-align: center;
+				text-decoration: none;
+				line-height: 39px !important;
+				outline: 0;
+				transition: opacity 0.2s linear;
+				cursor: pointer;
+				border-radius: 3px;
+				&:hover {
+					opacity: 0.7;
+				}
+				&:disabled,
+				&.disabled {
+					background-color: $inactive-color !important;
+				}
+				&.setting-remove {
+					background-color: #757575 !important;
+				}
+				@media only screen and (max-width: 991px){
+					min-width: initial;
+					width: 100%;
+				}
+			}
+			
+			.button-primary,
+			.aios-secondary-button{background: $secondary-color;}
+			.aios-disabled-button{background-color: #757575 !important;}
+			.edit-tag-actions{
+				display: block;
+				margin: 0 !important;
+				padding: 15px !important;
+				&.edit-tag-actions{
+					float: left;
+					width: 100%;
+				}
+				&::after{
+					@include clear-both();
+				}
+				.button-primary{
+					text-transform: uppercase !important;
+					text-shadow: none !important;
+					box-shadow: none !important;
+				}
+				#delete-link .delete{
+					background-color: #757575 !important;
+					margin-left: 1px;
+				}
+			}
+		}
+		&.has-wpseo{
+			h1{
+				max-width: 100%;
+			}
+			form{
+				max-width: 100% !important;
+				.form-table{
+					margin-top: 0 !important;
+					width: 50%;
+					@media only screen and (max-width: 991px) {
+						width: 100%;
+					}
+				}
+				#wpseo_meta{
+					margin-bottom: 0 !important;
+					width: 50%;
+					box-shadow: none !important;
+					@media only screen and (max-width: 991px) {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}	
+}
+
+/**
+ * Posts Filter
+ */
+#posts-filter{
+	font-family: "Roboto",sans-serif;
+	font-size: 16px;
+	color: #666666;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	.tablenav{
+		background-color: #f5f5f5;
+		display: block;
+		margin: 0 !important;
+		padding: 9px 15px;
+		font-size: 14px;
+		color: #393b3e;
+		&.top{
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+		}
+		&.bottom{
+			border-bottom-left-radius: 3px;
+			border-bottom-right-radius: 3px;
+		}
+		.displaying-num{
+			font-weight: 400;
+		}
+		.button{
+			box-shadow: none !important;
+			background: #e6e6e6;
+		}
+	}
+	.wp-list-table{
+		box-shadow: none !important;
+		thead,
+		tfoot{
+			a{
+				color: $dark-color !important;
+			}
+		}
+		#the-list{
+			.column-title strong{
+				font-weight: 400 !important;
+			}
+			.inline-edit-col{
+				input[type=email], 
+				input[type=number], 
+				input[type=password], 
+				input[type=search], 
+				input[type=tel], 
+				input[type=text], 
+				input[type=url], 
+				textarea, 
+				select {
+					display: block;
+					height: 34px;
+					width: 550px !important;
+					margin: 5px 0;
+					padding: 0 10px;
+					border-radius: 3px;
+					border: 1px solid #c5c5c5;
+					box-shadow: 0 0 0 transparent;
+					background-color: #fff;
+					color: #32373c;
+					outline: 0;
+					transition: 50ms border-color ease-in-out;
+				}
+				textarea{
+					min-height: 150px;
+					padding: 10px;
+				}
+			}
+		}
+
+		input[type=radio],
+		input[type=checkbox] {
+			-webkit-appearance: none;
+			display: inline-block;
+			position: relative;
+			background: #fff;
+			color: #555;
+			clear: none;
+			cursor: pointer;
+			margin: 0 0 0 8px;
+			outline: 0;
+			padding: 0 !important;
+			text-align: center;
+			vertical-align: top;
+			min-width: 16px;
+			transition: .05s border-color ease-in-out;
+			width: 16px;
+			height: 16px;
+			border: solid 1px #ccd1d9;
+			box-shadow: 0 0 0 0 rgba(0,0,0,0);
+			overflow: hidden;
+		}
+			input[type=radio] {
+				@include border-circle();
+				&:checked {
+					border: solid 1px $main-color;
+					&:before {
+						content: '';
+						display: inline-block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						font-size: 24px;
+						line-height: 16px;
+						background-color: $main-color;
+						width: 6px;
+						height: 6px;
+						margin: 6px;
+						@include border-circle();
+					}
+				}
+
+				&:disabled {
+					opacity: 1;
+					border: solid 1px #ccd1d9;
+					&:checked {
+						&:before {
+							opacity: 1;
+							background-color: #ccd1d9;
+						}
+					}
+				}
+			}
+			input[type=checkbox] {
+				border-radius: 2px;
+				&:checked {
+					border: solid 1px $main-color;
+					&:before {
+						content: '';
+						display: inline-block;
+						background-color: $main-color;
+						margin: 0;
+						padding: 0;
+						width: 16px;
+						height: 16px;
+					}
+					&:after {
+						content: '';
+						display: inline-block;
+						position: absolute;
+						top: -2px;
+						left: -3px;
+						z-index: 2;
+						width: 4px;
+						height: 9px;
+						border: solid #FFF;
+						border-width: 0 2px 2px 0;
+						transform: rotate(45deg);
+						margin: 2px 0 0 7px;
+					}
+
+				}
+				&:disabled {
+					opacity: 1;
+					border: solid 1px #ccd1d9;
+					&:checked {
+						&:before {
+							opacity: 1;
+							background-color: #ccd1d9;
+						}
+					}
+				}
+			}
+	}
+}
+
+.aios-scss-suspend,
+.aios-scss-resume{
+	a{
+		display: block;
+		background: #fb7a03 !important;
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+		color: #FFF !important;
+		transition: opacity 0.3s linear !important;
+		opacity: 1;
+		&:hover{
+			opacity: 0.8;
+		}
+		em{
+			display: inline-block;
+			font-size: 10px !important;
+			margin-right: 5px;
+		}
+	}
+}

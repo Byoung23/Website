@@ -1,0 +1,3 @@
+AIOS IHF Featured Properties JS
+Integrate your custom HTML with featured properties of iHomefinder(IHF). This widget uses HTML scraping to gather data. Use this if API access is unavailable.<br/>
+<i>Developed by: <span style="color:green;">Christian Bautista</span></i>

@@ -1,0 +1,4 @@
+<h4>Google Analytics</h4>
+<label for="aios-seotools[ga-tracking-code]">Tracking Code:</label>
+<input type="text" name="aios-seotools[ga-tracking-code]" id="aios-seotools[ga-tracking-code]" value="<?php echo !empty( $seo_option[ 'ga-tracking-code' ] ) ? esc_attr( $seo_option[ 'ga-tracking-code' ] ) : '' ?>" placeholder="UA-XXXXXXXX-YY">
+<textarea name="aios-seotools[ga-additional-code]" id="aios-seotools[ga-additional-code]" placeholder="Google Analytics Additional Code( ex. ga('require', 'GTM-K6WZRBX'); )"><?php echo !empty( $seo_option[ 'ga-additional-code' ] ) ?esc_attr( $seo_option[ 'ga-additional-code' ] ) : '' ?></textarea>

@@ -1,0 +1,205 @@
+<style type="text/css">
+body {
+	width:630px;
+	height:596px;
+	padding: 0;
+	margin: 4px 0 0 4px;
+	overflow: hidden;
+}
+#instruction-container {
+	width: 97%;
+	height: 97%;
+	background: #fff;
+	
+	font-family: calibri;
+}
+#instruction-left {
+	width: 50%;
+	float: left;
+	height: 100%;
+	overflow: auto;
+}
+	#instruction-left h2 {
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);	
+		width: 200px;
+		text-align: center;
+		background: #222222;
+		color:#fff;
+		position: absolute;
+		top: 238px;
+		left: -235px;
+		padding: 10px 170px;
+	}
+	#instruction-left ul {	
+		margin-left: 25px;
+	}
+#instruction-right {
+	float: left;
+	width: 48%;
+}
+	#instruction-right h2 {
+		width: 195px;
+		text-align: center;
+		background: #222222;
+		color:#fff;
+		position: absolute;
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		margin-left: 3px;
+
+	}
+	#instruction-right .details {
+		margin: 22px 10px 0 60px;
+		overflow-y: auto;
+		height:97%;
+	}
+	#instruction-right #instruction-up {
+		height: 46%;
+		border-bottom: 1px solid #ccc;
+		width: 296px;
+	}
+		#instruction-right #instruction-up h2 {
+			top: 103px;
+			left: 209px;
+			padding: 10px 26.5px;
+			
+		}	
+	#instruction-right #instruction-down h2 {
+		top: 386px;
+		left: 212px;
+		padding: 10px 23.5px;
+	}	
+
+</style>
+<div id="instruction-container">
+	<div id="instruction-left">
+	<h2>Lists of Shorcodes</h2>
+	<ul style="font-family:open sans,sans-serif; font-size:12px; list-style:none; float:left; width:77%;">
+		<li><b>Loop</b></li>		
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">ihf_loopstart</span>]</strong><br />
+		<em>IHF Loop Start</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">ihf_loopend</span>]</strong><br />
+		<em>IHF Loop End</em></li>
+		
+		<li><b>Price</b></li>		
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">list_price</span>]</strong><br />
+		<em>List Price</em></li>
+		
+		<li><b>Sold Price</b></li>		
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">sold_price</span>]</strong><br />
+		<em>Sold Price</em></li>
+		
+		<li><b>Price</b></li>		
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">price</span>]</strong><br />
+		<em>Price is pulled based on status</em></li>
+		
+		<li><b>Photo</b></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">ihfphotourl</span>]</strong><br />
+		<em>IHF Photo URL</em></li>		
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">mlsphotocount</span>]</strong><br />
+		<em>MLS Photo Count</em></li>
+		
+		<li><b>Permalink</b></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">listing_link</span>]</strong><br />
+		<em>IHF Listing Link</em></li>
+		
+		<li><b>Property Status</b></li>		
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">status</span>]</strong><br />
+		<em>Listing Property Status</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">listing_status_display</span>]</strong><br />
+		<em>Listing Property Status Display</em></li>		
+		
+		<li><b>Address</b></li>		
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">house_numb</span>]</strong><br />
+		<em>House Number</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">street_nam</span>]</strong><br />
+		<em>Street Name</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">addr_fpn</span>]</strong><br />
+		<em></em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">city_name</span>]</strong><br />
+		<em>City Name</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">zip</span>]</strong><br />
+		<em>Zip Code</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">state</span>]</strong><br />
+		<em>State</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">cityid</span>]</strong><br />		
+		<em>City ID</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">countyid</span>]</strong><br />
+		<em>County ID</em></li>
+		
+		<li><b>Property Details</b></li>		
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">prop_sub_t</span>]</strong><br />
+		<em>Property Subtype</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">totl_bed</span>]</strong><br />
+		<em>Total Bedrooms</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">totl_hbath</span>]</strong><br />
+		<em>Total Full Baths</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">totl_hbath</span>]</strong><br />
+		<em>Total Half Baths</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">totl_fl_sq</span>]</strong><br />
+		<em>Total Square Footage</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">year_built</span>]</strong><br />
+		<em>Year Built</em></li>		
+		
+		<li><b>Agent</b></li>	
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">agt_frstnm</span>]</strong><br />
+		<em>Agent First Name</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">agt_lastnm</span>]</strong><br />
+		<em>Agent Last Name</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">agt_code</span>]</strong><br />
+		<em>Agent Code</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">co_agt_nam</span>]</strong><br />
+		<em>Co Agent Name</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">co_agt_code</span>]</strong><br />
+		<em>Co Agent Code</em></li>
+		
+		<li><b>Office</b></li>	
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">office_nam</span>]</strong><br />
+		<em>Office Name</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">office_cod</span>]</strong><br />
+		<em>Office Code</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">office_phn</span>]</strong><br />
+		<em>Office Phone</em></li>	
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">co_ofc_nam</span>]</strong><br />
+		<em>Co Office Name</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">co_ofc_cod</span>]</strong><br />
+		<em>Co Office Code</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">co_ofc_phn</span>]</strong><br />
+		<em>Co Office Phone</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">listing_number</span>]</strong><br />
+		<em>Listing Number</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">mlsid</span>]</strong><br />
+		<em>MLS ID</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">remarks</span>]</strong><br />
+		<em>Remarks</em></li>
+		
+	</ul><br /><br /><br />
+	</div>
+	<div id="instruction-right">
+		<div id="instruction-up">
+			<h2>Instruction</h2>
+			<div class="details">
+				<p>
+				1. You need to configure the widget based on your preference.
+				On the HTML part, put the static html and change the required data using the list of shortcodes below.
+				</p>
+				<p>
+				2. You need to put the repeated HTML part inside the loop.<br/>
+				Sample:<br/>
+				[ihf_loopstart]<br/>
+					-insert repeated HTML part here-<br/>
+				[ihf_loopend]
+				</p>
+			</div>
+		</div>
+		<div id="instruction-down">
+			<div class="details">
+				<h2>Sample HTML</h2><br/>&lt;div&gt;Widget Text&lt;/div&gt;<br/> [ihf_loopstart]<br/> &lt;div&gt;&lt;h2&gt;&lt;a href=&quot;[listing_link]&quot;&gt;[house_numb] [street_nam], [city_name]&lt;/a&gt;&lt;h2&gt;&lt;/div&gt;&lt;br/&gt;<br/> 
+				&lt;div&gt;&lt;img src="[ihfphotourl]" /&gt;&lt;/div&gt;<br/> &lt;div&gt; List Price: [list_price]&lt;/div&gt;[ihf_loopend]<br/>
+			</div>
+		</div>
+	</div>
+	<div style="clear:both"></div>
+
+</div>

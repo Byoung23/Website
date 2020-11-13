@@ -1,0 +1,3 @@
+IHF Featured Properties
+Same with AIOS IHF Featured Properties JS. Use this if API access is available.<br>
+<i>Developed by: <span style="color:green;">Christian Bautista</span> and <span style="color:green;">Carlo Dela Cruz</span></i>

@@ -1,0 +1,139 @@
+/** Override Style */
+@media(min-width: 800px) {
+    #wpbody-content #dashboard-widgets .postbox-container {
+        width: 49.5% !important;
+    }
+    #wpbody-content #dashboard-widgets.columns-2 #postbox-container-2, 
+    #wpbody-content #dashboard-widgets.columns-2 #postbox-container-3, 
+    #wpbody-content #dashboard-widgets.columns-2 #postbox-container-4{
+        width: 50.5% !important;
+    }
+}
+
+/** Logo */
+.amw-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    @media only screen and (max-width: 799px) {
+        flex-direction: column;
+    }
+    a{
+        position: relative;	
+        em{
+            font-size: 50px;
+            color: #009bbb;
+        }
+        span{
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+            font-family: 'Open Sans', sans-serif !important;
+            font-size: 11px;
+            letter-spacing: 1.2px;
+            color: #000 !important;
+        }
+    }
+    .amn-contact-details{
+        @media only screen and (max-width: 799px) {
+            margin-top: 20px;
+        }
+        .sales-btn,
+        .support-btn{
+            display: block;
+            padding: 5px 0;
+            @media only screen and (max-width: 799px) {
+                text-align: center;
+            }
+            a{
+                background: #fb7a03;
+                display: inline-block;
+                vertical-align: top;
+                padding: 6px 13px;
+                border-radius: 20px;
+                transition: all 0.3s linear;
+                line-height: 20px;
+                font-weight: 600;
+                margin-left: 10px;
+                font-size: 20px;
+                color: #FFF;
+                vertical-align: middle;
+                &:hover{
+                    background: #FFF;
+                    color: #fb7a03;
+                }
+                &.ai-num-dark{
+                    background-color: #009bbb;
+                    color: #ffffff;
+                    &:hover{
+                        background-color: #ffffff;
+                        color: #009bbb;
+                    }
+                }
+                .ai-font-phone{
+                    font-size: 17px;
+                }
+            }
+        }
+        
+    }
+}
+
+/** News */
+#amnwidget{
+    .rss-widget{
+        ul{
+            li{
+                border-bottom: 1px solid #eee;
+                font-size: 13px;
+                padding: 8px 0 15px;
+                &:after{
+                    content: '';
+                    display: block;
+                    clear: both;
+                    height: 0;
+                }
+                .rssTitle{
+                    display: block;
+                }
+                .rssContainer{
+                    display: flex;
+                    .rssSummaryImg{
+                        width: 40%;
+                        padding-top: 10px;
+                        canvas{
+                            width: 100% !important;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                        }
+                    }
+                    .rssSummary{
+                        width: 60%;
+                        padding-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .amn-more-tips {
+        background: #fb7a03;
+        display: inline-block;
+        vertical-align: top;
+        padding: 10px 20px;
+        border-radius: 20px;
+        transition: all 0.3s linear;
+        line-height: 20px;
+        font-weight: 600;
+        margin: 15px 0 0 10px;
+        font-size: 15px;
+        color: #FFF;
+        vertical-align: middle;
+        &:hover{
+            background: #FFF;
+            color: #fb7a03;
+        }
+    }
+}

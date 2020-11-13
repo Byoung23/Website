@@ -1,0 +1,11 @@
+/** Remove black line on safari **/
+.ui-datepicker.ui-widget-content{
+	background-image: none !important;
+}
+
+/* Remove extra space below detail pages */
+body > img[src*='//idsync.rlcdn.com'], 
+body > img[src*='//di.rlcdn.com'], 
+body > iframe {
+	display: none;
+}

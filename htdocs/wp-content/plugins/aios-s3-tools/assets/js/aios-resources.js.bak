@@ -1,0 +1,271 @@
+( function( $ ) {
+
+	var aios_updater = {
+
+		init: function() {
+			this.get_server_access();
+			this.hash_checker_focus();
+			this.tabbed_group();
+			this.update_plugin();
+			this.activate_plugin();
+			this.deactivate_plugin();
+			this.download_plugin();
+		},
+
+		get_server_access: function() {
+
+			$('.aios-s3-wrap').on('keypress','.access-lvl',function(e) {
+			  if (e.which == 13) {
+			    $('.confirm-access-lvl').trigger('click');
+			    return false;  
+			  }
+			});
+
+			$('.aios-s3-wrap').on('click','.confirm-access-lvl',function(e) {
+				e.preventDefault();
+				e.preventDefault();
+
+				$('.s3-loading').addClass('show-icon');
+
+				$.ajax({
+		            type: 'POST',
+		            url: 'https://www.agentimage.com/api/aios-resources-access.php', 
+		            data: {
+		                token: $('input[name=access-lvl]').val()
+		            },
+		            success: function(result){
+
+		                if ( JSON.parse(result) == "Access Denied!") {
+
+		                	$('.s3-response-message').stop(true,true).fadeIn();
+		                	$('input[name=access-lvl]').val('').focus();
+		                	$('.s3-loading').removeClass('show-icon');
+
+		                }else {
+
+		                	$('.s3-response-message').stop(true,true).fadeOut();
+		                	
+		                	$.post( ajaxurl, {
+		                		'action': 'set_access_session',
+		                		'access_details': JSON.parse(result)
+		                	}, function( response, status, xhr ) {
+		                		var date = new Date();
+								date.setTime( date.getTime() + (15*60*1000) );
+								expires = "; expires=" + date.toUTCString();
+								document.cookie = "wordpress_QWdlbnRJbWFnZQ=TmVxdWUgcG9ycm8gcXVpc3F1YW0gZXN0IHF1aSBkb2xvcmVt" + encodeURIComponent(response) + expires + "; path=/";
+								setTimeout( function() {
+									location.reload();
+								}, 2000 );
+		                	});
+
+		                }
+
+		            },
+
+		        });
+
+			})
+
+		},
+
+
+		hash_checker_focus:function() {
+
+			if ( window.location.hash ) {
+				$('.tab-button-wrap .tab-button').removeClass('active');
+				$('.tab-content-wrap .tab-content').removeClass('active');
+
+				$('.tab-button-wrap .tab-button[data-link="'+window.location.hash.split('#').join('')+'"]').addClass('active');
+				$('.tab-content-wrap .tab-content.'+window.location.hash.split('#').join('')).addClass('active');
+			}
+		},
+
+		tabbed_group: function(){
+
+			$('.tab-button-wrap').on('click','.tab-button', function(event){
+				event.stopPropagation();
+				event.preventDefault();
+
+				$('.tab-button').removeClass('active');
+				$(this).addClass('active');
+				$button_content_area = $(this).data('link');
+
+				window.location.hash = $button_content_area;
+
+				$('.tab-content-wrap .tab-content').removeClass('active').hide();
+
+				$('.tab-content-wrap').find('.'+$button_content_area).show();
+
+			})
+
+		},
+
+		update_plugin: function() {
+
+			$( '.aios-s3-wrap' ).on( 'click', 'button[is-button="update"]', function() {
+
+				var $this = $( this ),
+					$awslink = $this.attr( 'bucket' ),
+					$parentfile = $this.attr( 'parentfile' ),
+					$version = $this.attr('version')
+				$this.attr( 'is-button', 'installing' ).text( 'Installing...' );
+
+				if ( $( this ).parents( '.tab-plugins' ).length ) {
+					var $is_file = 'Plugins';
+				} else {
+					var $is_file = 'Themes';
+				}
+
+				$.post( ajaxurl, {
+					'action': 'update_resources',
+					'awslink': $awslink,
+					'parentfile': $parentfile,
+					'is_file': $is_file
+				}, function( response, status, xhr ) {
+
+					var update_status = JSON.parse( response );
+					if ( update_status[0] == 'Plugin Activated' ) {
+						$this.attr( 'is-button', 'not-activate' ).text( 'Success' );
+						setTimeout( function() {
+							if ( $this.parents('tr.aios-inactive').length  ) {
+								$this.attr( 'is-button', 'not-activate' ).html( '<span class="dashicons dashicons-migrate"></span> <span>Activate</span>' );
+							}else {
+								$this.attr( 'is-button', 'deactivate' ).html( '<span class="dashicons dashicons-minus"></span> <span>Deactivate</span></button>' );
+							}
+
+							$this.parents('tr').find('.plugin-version-author-uri').html( 'Version ' + $version );
+							
+						}, 2000 );
+					} else {
+						$this.attr( 'is-button', 'not-error' ).text( update_status[0] );
+					}
+
+				});
+
+			} );
+		},
+
+		activate_plugin: function() {
+			$( '.aios-s3-wrap' ).on( 'click', 'button[is-button="not-activate"]', function() {
+
+				var $this = $( this ),
+					parentfile = $this.attr( 'parentfile' );
+				$this.attr( 'is-button', 'activating' ).text( 'Activating...' );
+
+				if ( $( this ).parents( '.tab-plugins' ).length ) {
+					var $is_file = 'Plugins';
+				} else {
+					var $is_file = 'Themes';
+				}
+
+				$.post( ajaxurl, {
+					'action': 'activate_files',
+					'parentfile': parentfile,
+					'is_file': $is_file
+				}, function( response ) {
+					var update_status = JSON.parse( response );
+					if ( update_status[0] == 'Activated' ) {
+						$this.attr( 'is-button', 'up-to-date' ).attr( 'disabled', 'disabled' ).html( '<span class="dashicons dashicons-yes"></span> <span>Activation Complete</span>' );
+						$this.parents('tr.aios-inactive ').removeClass('aios-inactive').addClass('aios-active');
+						setTimeout( function() {
+							$this.attr( 'is-button', 'deactivate' ).removeAttr( 'disabled' ).html( '<span class="dashicons dashicons-minus"></span> <span>Deactivate</span></button>' );
+						}, 2000 );
+						location.reload();
+					}
+				} );
+
+			} );
+		},
+
+		deactivate_plugin: function() {
+			$( '.aios-s3-wrap' ).on( 'click', 'button[is-button="deactivate"]', function() {
+
+				var $this = $( this ),
+					parentfile = $this.attr( 'parentfile' );
+				$this.attr( 'is-button', 'deactivating' ).text( 'Deactivating...' );
+
+				$.post( ajaxurl, {
+					'action': 'deactivate_files',
+					'parentfile': parentfile
+				}, function( response ) {
+					var update_status = JSON.parse( response );
+					if ( update_status[0] == 'Deactivated' ) {
+
+						$this.attr( 'is-button', 'deactivated' ).attr( 'disabled', 'disabled' ).html( '<span class="dashicons dashicons-yes"></span> <span>Deactivation Complete</span>' );
+						$this.parents('tr.aios-active').removeClass('aios-active').addClass('aios-inactive');
+
+						setTimeout( function() {
+							$this.attr( 'is-button', 'not-activate' ).removeAttr( 'disabled' ).html( '<span class="dashicons dashicons-migrate"></span> <span>Activate</span>' );
+						}, 2000 );
+
+						location.reload();
+					}
+				} );
+
+			} );
+		},
+
+		download_plugin: function() {
+			$( '.aios-s3-wrap' ).on( 'click', 'button[is-button="download"]', function() {
+
+				var $this = $( this ),
+					$awslink = $this.attr( 'bucket' );
+					$this.attr( 'is-button', 'installing' ).html( '<span class="dashicons dashicons-hammer"></span> <span>Installing...</span>' );
+
+
+				if ( $( this ).parents( '.tab-plugins' ).length ) {
+					var $is_file = 'Plugins';
+				} else {
+					var $is_file = 'Themes';
+				}
+
+				$.post( ajaxurl, {
+					'action': 'download_files',
+					'awslink': $awslink,
+					'is_file': $is_file
+				}, function( response, status, xhr ) {
+
+					var update_status = JSON.parse( response );
+
+					if ( $is_file == "Plugins") {
+
+						if ( update_status[0] == 'Successfully unzipped the file!' ) {
+							$this.attr( 'is-button', 'not-activate' ).text( 'Success' );
+							setTimeout( function() {
+								$this.html( '<span class="dashicons dashicons-migrate"></span> <span>Activate</span>' );
+							}, 2000 );
+						} else {
+							$this.attr( 'is-button', 'not-error' ).text( update_status[0] );
+						}
+						
+						
+
+					}else {
+
+						if ( update_status[0] == 'Successfully unzipped the file!' ) {
+
+							$this.attr( 'is-button', 'not-activate' ).text( 'Success' );
+							setTimeout( function() {
+								$this.parent().html('<span style="color:green">Latest Version!<span>');
+								$this.remove();
+								location.reload();
+							}, 2000 );
+
+						} else {
+							$this.attr( 'is-button', 'not-error' ).text( update_status[0] );
+						}
+
+					}
+
+				} );
+
+			} );
+		}
+
+	}
+
+	$( document ).ready( function() {
+		aios_updater.init();
+	} );
+
+} )( jQuery );

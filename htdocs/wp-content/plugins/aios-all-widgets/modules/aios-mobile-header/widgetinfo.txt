@@ -1,0 +1,2 @@
+AIOS Mobile Header
+Use headers seen at <a href="https://www.agentimage.com/aios-mobile-headers/" target="_blank">https://www.agentimage.com/aios-mobile-headers/</a>.

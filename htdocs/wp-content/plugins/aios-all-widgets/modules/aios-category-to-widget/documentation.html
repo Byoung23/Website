@@ -1,0 +1,165 @@
+<style type="text/css">
+body {
+	padding: 0;
+	margin: 4px 0 0 4px;
+	overflow: hidden;
+}
+#instruction-container {
+	width: 97%;
+	height: 97%;
+	background: #E5E5E5;
+	border: 7px ridge gray;
+	font-family: calibri;
+}
+#instruction-left {
+	border-right: 7px ridge gray;
+	width: 50%;
+	float: left;
+	height: 100%;
+	overflow: auto;
+}
+	#instruction-left h2 {
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);	
+		width: 200px;
+		text-align: center;
+		background: #C4C4C4;
+		border-bottom: 1px solid gray;
+		position: absolute;
+		top: 238px;
+		left: -235px;
+		padding: 10px 170px;
+	}
+	#instruction-left ul {	
+		margin-left: 25px;
+	}
+#instruction-right {
+	float: left;
+	width: 48%;
+}
+	#instruction-right h2 {
+		width: 200px;
+		text-align: center;
+		background: #C4C4C4;
+		border-bottom: 1px solid gray;
+		position: absolute;
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+	}
+	#instruction-right .details {
+		margin: 22px 10px 0 60px;
+	}
+	#instruction-right #instruction-up {
+		height: 46%;
+		border-bottom: 7px ridge gray;
+		width: 296px;
+	}
+		#instruction-right #instruction-up h2 {
+			top: 103px;
+			left: 209px;
+			padding: 10px 35.5px;
+			
+		}	
+	#instruction-right #instruction-down h2 {
+		top: 377px;
+		left: 212px;
+		padding: 10px 31.5px;
+	}	
+</style>
+<div id="instruction-container">
+	<div id="instruction-left">
+	<h2>Lists of Shorcodes</h2>
+	<ul style="font-family:open sans,sans-serif; font-size:12px; list-style:none; float:left; width:77%;">
+		<li><b>LOOP</b></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">loop_start</span>]</strong><br />
+		<em>Start of Loop</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">loop_end</span>]</strong><br />
+		<em>End of Loop</em></li>
+		
+		<li><b>DATE ( Day )</b></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">post_date_day</span>]</strong><br />
+		<em>2 digits with leading zeros</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">post_date_day_nozero</span>]</strong><br />
+		<em>without leading zeros</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">post_date_day_text</span>]</strong><br />
+		<em>A full textual representation of the day of the week</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">post_date_day_text_abbr</span>]</strong><br />
+		<em>A textual representation of a day, three letters</em></li>
+		
+		<li><b>DATE ( Month )</b></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">post_date_month</span>]</strong><br />
+		<em>A full textual representation of a month</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">post_date_month_abbr</span>]</strong><br />
+		<em>A short textual representation of a month</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">post_date_month_num</span>]</strong><br />
+		<em>with leading zeros</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">post_date_month_num_nozero</span>]</strong><br />
+		<em>without leading zeros</em></li>
+		
+		<li><b>DATE ( Year )</b></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">post_date_year_full</span>]</strong><br />
+		<em>A full numeric representation of a year</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">post_date_year_short</span>]</strong><br />
+		<em>A two digit representation of a year</em></li>
+		
+		<li><b>IMAGE</b></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">featured_img_small</span>]</strong><br />
+		<em>Featured Image Small Size (HTML)</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">featured_img_medium</span>]</strong><br />
+		<em>Featured Image Medium Size (HTML)</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">featured_img_large</span>]</strong><br />
+		<em>Featured Image Large Size (HTML)</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">featured_img_full</span>]</strong><br />
+		<em>Featured Image Full Size (HTML)</em></li>		
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">featured_img_small_url</span>]</strong><br />
+		<em>Featured Image Small Size (URL)</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">featured_img_medium_url</span>]</strong><br />
+		<em>Featured Image Medium Size (URL)</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">featured_img_large_url</span>]</strong><br />
+		<em>Featured Image Large Size (URL)</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">featured_img_full_url</span>]</strong><br />
+		<em>Featured Image Full Size (URL)</em></li>	
+		
+		<li><b>OTHERS</b></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">post_title</span>]</strong><br />
+		<em>Post Title</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">post_content</span>]</strong><br />
+		<em>Post Content</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">post_excerpt</span>]</strong><br />
+		<em>Post Excerpt</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">post_name</span>]</strong><br />
+		<em>Post Name</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">post_readmore</span>]</strong><br />
+		<em>Post Read More Text</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">permalink</span>]</strong><br />
+		<em>Post Permalink</em></li>
+		<li style="padding:2px; margin-left:10px"><strong>[<span style="color:#008000">post_author</span>]</strong><br />
+		<em>Post Author</em></li>
+	</ul>
+	</div>
+	<div id="instruction-right">
+		<div id="instruction-up">
+			<h2>Instruction</h2>
+			<div class="details">
+				<p>
+				1. You need to configure the widget based on your preference.
+				On the HTML part, put the static html and change the required data using the list of shortcodes below.
+				</p>
+				<p>
+				2. You need to put the repeated HTML part inside the loop.<br/>
+				Sample:<br/>
+				[loop_start]<br/>
+					-insert repeated HTML part here-<br/>
+				[loop_end]
+				</p>
+			</div>
+		</div>
+		<div id="instruction-down">
+			<div class="details">
+				<h2>Sample HTML</h2><br/>&lt;div&gt;Widget title&lt;/div&gt;<br/> [loop_start]<br/> &lt;div&gt;Title: &lt;a href=&quot;[permalink]&quot;&gt;[post_title]&lt;/a&gt;&lt;/div&gt;<br/> &lt;div&gt;Author: [post_author]&lt;/div&gt;<br/> &lt;div&gt;[featured_img_small]&lt;/div&gt;<br/> [loop_end]<br/> &lt;/div&gt;
+			</div>
+		</div>
+	</div>
+	<div style="clear:both"></div>
+
+</div>

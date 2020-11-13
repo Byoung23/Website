@@ -1,0 +1,3 @@
+IDX Broker Featured
+Same with AIOS IDX Broker Featured Property JS. Use this if API access is available.<br>
+<i>Developed by: <span style="color:green;">Ranchie Canino</span></i>

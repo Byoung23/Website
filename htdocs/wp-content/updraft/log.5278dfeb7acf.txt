@@ -1,0 +1,196 @@
+0000.000 (0) Opened log file at time: Fri, 30 Nov 2018 05:23:44 +0000 on http://benjaminthebroker.com
+0000.001 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.15.5 WP: 4.9.8 PHP: 7.1.24 (fpm-fcgi, Linux 938138-web9.thedesignpeople.com 3.10.0-862.11.6.el7.x86_64 #1 SMP Tue Aug 14 21:49:04 UTC 2018 x86_64) MySQL: 5.5.60-MariaDB WPLANG: en_US Server: nginx/1.12.2 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 41.4M | 2M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.002 (0) Free space on disk containing Updraft's temporary directory: 24486.3 MB
+0000.003 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.007 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.008 (0) Set semaphore last lock (fd) time to 2018-11-30 05:23:44
+0000.009 (0) Semaphore lock (fd) complete
+0000.010 (0) Backup run: resumption=0, nonce=5278dfeb7acf, begun at=1543555424 (0s ago), job type=backup
+0000.011 (0) Scheduling a resumption (1) after 300 seconds (1543555724) in case this run gets aborted
+0000.017 (0) Checking if we have a zip executable available
+0000.019 (0) Creation of backups of directories: beginning
+0000.021 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0004.054 (0) Total entities for the zip file: 638 directories, 3637 files (0 skipped as non-modified), 43.5 MB
+0004.058 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0004.131 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 100 files added (on-disk size: 113.8 KB)
+0004.200 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 200 files added (on-disk size: 113.8 KB)
+0004.286 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 300 files added (on-disk size: 113.8 KB)
+0004.374 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 400 files added (on-disk size: 113.8 KB)
+0004.439 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 500 files added (on-disk size: 113.8 KB)
+0004.441 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (4.8 MB, 3637 files batched, 501 (502) added so far); re-opening (prior size: 113.8 KB)
+0004.790 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 600 files added (on-disk size: 1540.6 KB)
+0004.851 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 700 files added (on-disk size: 1540.6 KB)
+0004.917 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 800 files added (on-disk size: 1540.6 KB)
+0004.974 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 900 files added (on-disk size: 1540.6 KB)
+0005.034 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 1000 files added (on-disk size: 1540.6 KB)
+0005.036 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.9 MB, 3637 files batched, 501 (1003) added so far); re-opening (prior size: 1540.6 KB)
+0005.240 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 1100 files added (on-disk size: 2570.4 KB)
+0005.301 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 1200 files added (on-disk size: 2570.4 KB)
+0005.365 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 1300 files added (on-disk size: 2570.4 KB)
+0005.430 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 1400 files added (on-disk size: 2570.4 KB)
+0005.505 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 1500 files added (on-disk size: 2570.4 KB)
+0005.509 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.4 MB, 3637 files batched, 501 (1504) added so far); re-opening (prior size: 2570.4 KB)
+0005.774 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 1600 files added (on-disk size: 3765 KB)
+0005.851 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 1700 files added (on-disk size: 3765 KB)
+0005.926 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 1800 files added (on-disk size: 3765 KB)
+0005.989 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 1900 files added (on-disk size: 3765 KB)
+0006.051 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 2000 files added (on-disk size: 3765 KB)
+0006.055 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (11.9 MB, 3637 files batched, 501 (2005) added so far); re-opening (prior size: 3765 KB)
+0006.967 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 2100 files added (on-disk size: 7347.7 KB)
+0007.070 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 2200 files added (on-disk size: 7347.7 KB)
+0007.182 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 2300 files added (on-disk size: 7347.7 KB)
+0007.267 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 2400 files added (on-disk size: 7347.7 KB)
+0007.369 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 2500 files added (on-disk size: 7347.7 KB)
+0007.376 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (10.1 MB, 3637 files batched, 501 (2506) added so far); re-opening (prior size: 7347.7 KB)
+0008.285 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 2600 files added (on-disk size: 10224.7 KB)
+0008.372 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 2700 files added (on-disk size: 10224.7 KB)
+0008.463 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 2800 files added (on-disk size: 10224.7 KB)
+0008.556 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 2900 files added (on-disk size: 10224.7 KB)
+0008.636 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 3000 files added (on-disk size: 10224.7 KB)
+0008.641 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.9 MB, 3637 files batched, 501 (3007) added so far); re-opening (prior size: 10224.7 KB)
+0008.969 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 3100 files added (on-disk size: 11089 KB)
+0009.031 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 3200 files added (on-disk size: 11089 KB)
+0009.094 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 3300 files added (on-disk size: 11089 KB)
+0009.181 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 3400 files added (on-disk size: 11089 KB)
+0009.255 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 3500 files added (on-disk size: 11089 KB)
+0009.261 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (7.1 MB, 3637 files batched, 501 (3508) added so far); re-opening (prior size: 11089 KB)
+0009.668 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip.tmp: 3600 files added (on-disk size: 14627.8 KB)
+0009.914 (0) Created plugins zip (0) - 14746.9 KB in 9.9 s (1490.9 KB/s) (sha1: fc87e237134f59f921ad83fe5f25e75944d26bd8, sha256: 81e72d3faf8767b81c10a5f87a1a4a0c1de3f6731f9e48224d29cb95ea4471dd)
+0009.916 (0) Beginning creation of dump of themes (split every: 400 MB)
+0010.147 (0) Total entities for the zip file: 32 directories, 241 files (0 skipped as non-modified), 12.9 MB
+0010.214 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0010.285 (0) Zip: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0010.567 (0) Created themes zip (0) - 12609 KB in 0.6 s (19469.6 KB/s) (sha1: 1a723c5f885cb50092df07375c7135e0decae7c2, sha256: 9c8a29e4c442de1811571aef5dd6e14f464781f3e4ab46162ec202b47840af37)
+0010.569 (0) No backup of uploads: excluded by user's options
+0010.570 (0) Beginning backup of other directories found in the content directory (index: 0)
+0010.570 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0010.571 (0) Looking for candidates to backup in: /var/www/vhosts/b/byoung-pending.com/htdocs/wp-content
+0010.572 (0) finding files: index.php: adding to list (1)
+0010.572 (0) finding files: plugins: skipping: this is the plugins directory
+0010.572 (0) finding files: updraft: skipping: this is the updraft directory
+0010.573 (0) finding files: mu-plugins: adding to list (2)
+0010.573 (0) finding files: aios-initial-setup-cf7-formdata-compatibility: adding to list (3)
+0010.574 (0) finding files: upgrade: skipping: excluded by options
+0010.574 (0) finding files: uploads: skipping: this is the uploads directory
+0010.575 (0) finding files: themes: skipping: this is the themes directory
+0010.597 (0) Total entities for the zip file: 6 directories, 14 files (0 skipped as non-modified), 0.1 MB
+0010.618 (0) Created others zip (0) - 43 KB in 0 s (1086.1 KB/s) (sha1: 48ba06823daa72608c659df46c1fa255d1b285dc, sha256: c931f84d11e90dffd12692fde8f3e69aaa948a957d070cf12f646952ab4180b8)
+0010.622 (0) Saving backup status to database (elements: 6)
+0010.623 (0) Beginning creation of database dump (WordPress DB)
+0010.629 (0) Table wp_options: Total expected rows (approximate): 135
+0010.661 (0) Table wp_options: Total rows added: 279 in 0.03 seconds
+0010.662 (0) Table wp_options: finishing file (backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_options.table.gz - 147.3 KB)
+0010.665 (0) Table wp_users: Total expected rows (approximate): 2
+0010.666 (0) Table wp_users: Total rows added: 2 in 0.00 seconds
+0010.667 (0) Table wp_users: finishing file (backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_users.table.gz - 0.6 KB)
+0010.670 (0) Table wp_usermeta: Total expected rows (approximate): 37
+0010.671 (0) Table wp_usermeta: Total rows added: 37 in 0.00 seconds
+0010.672 (0) Table wp_usermeta: finishing file (backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_usermeta.table.gz - 1.6 KB)
+0010.675 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0010.676 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0010.677 (0) Table wp_commentmeta: finishing file (backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0010.680 (0) Table wp_comments: Total expected rows (approximate): 1
+0010.681 (0) Table wp_comments: Total rows added: 1 in 0.00 seconds
+0010.682 (0) Table wp_comments: finishing file (backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_comments.table.gz - 0.7 KB)
+0010.684 (0) Table wp_links: Total expected rows (approximate): 0
+0010.685 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0010.686 (0) Table wp_links: finishing file (backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_links.table.gz - 0.4 KB)
+0010.690 (0) Table wp_postmeta: Total expected rows (approximate): 1185
+0010.696 (0) Table wp_postmeta: Total rows added: 1159 in 0.01 seconds
+0010.697 (0) Table wp_postmeta: finishing file (backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_postmeta.table.gz - 12.8 KB)
+0010.700 (0) Table wp_posts: Total expected rows (approximate): 209
+0010.710 (0) Table wp_posts: Total rows added: 271 in 0.01 seconds
+0010.711 (0) Table wp_posts: finishing file (backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_posts.table.gz - 31.5 KB)
+0010.713 (0) Table wp_term_relationships: Total expected rows (approximate): 33
+0010.715 (0) Table wp_term_relationships: Total rows added: 33 in 0.00 seconds
+0010.715 (0) Table wp_term_relationships: finishing file (backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_term_relationships.table.gz - 0.4 KB)
+0010.718 (0) Table wp_term_taxonomy: Total expected rows (approximate): 4
+0010.719 (0) Table wp_term_taxonomy: Total rows added: 4 in 0.00 seconds
+0010.719 (0) Table wp_term_taxonomy: finishing file (backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_term_taxonomy.table.gz - 0.5 KB)
+0010.722 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0010.723 (0) Table wp_termmeta: Total rows added: 0 in 0.00 seconds
+0010.723 (0) Table wp_termmeta: finishing file (backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_termmeta.table.gz - 0.4 KB)
+0010.726 (0) Table wp_terms: Total expected rows (approximate): 4
+0010.727 (0) Table wp_terms: Total rows added: 4 in 0.00 seconds
+0010.728 (0) Table wp_terms: finishing file (backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_terms.table.gz - 0.5 KB)
+0010.731 (0) Table wp_wsal_metadata: Total expected rows (approximate): 958
+0010.735 (0) Table wp_wsal_metadata: Total rows added: 860 in 0.00 seconds
+0010.736 (0) Table wp_wsal_metadata: finishing file (backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_wsal_metadata.table.gz - 7.6 KB)
+0010.738 (0) Table wp_wsal_occurrences: Total expected rows (approximate): 90
+0010.739 (0) Table wp_wsal_occurrences: Total rows added: 90 in 0.00 seconds
+0010.740 (0) Table wp_wsal_occurrences: finishing file (backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_wsal_occurrences.table.gz - 1.3 KB)
+0010.742 (0) Table wp_wsal_options: Total expected rows (approximate): 14
+0010.743 (0) Table wp_wsal_options: Total rows added: 14 in 0.00 seconds
+0010.744 (0) Table wp_wsal_options: finishing file (backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_wsal_options.table.gz - 0.8 KB)
+0010.747 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_options.table.gz (1/15): adding to final database dump
+0010.772 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_users.table.gz (2/15): adding to final database dump
+0010.772 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_usermeta.table.gz (3/15): adding to final database dump
+0010.773 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_commentmeta.table.gz (4/15): adding to final database dump
+0010.774 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_comments.table.gz (5/15): adding to final database dump
+0010.774 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_links.table.gz (6/15): adding to final database dump
+0010.775 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_postmeta.table.gz (7/15): adding to final database dump
+0010.778 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_posts.table.gz (8/15): adding to final database dump
+0010.784 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_term_relationships.table.gz (9/15): adding to final database dump
+0010.785 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_term_taxonomy.table.gz (10/15): adding to final database dump
+0010.786 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_termmeta.table.gz (11/15): adding to final database dump
+0010.787 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_terms.table.gz (12/15): adding to final database dump
+0010.787 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_wsal_metadata.table.gz (13/15): adding to final database dump
+0010.789 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_wsal_occurrences.table.gz (14/15): adding to final database dump
+0010.791 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db-table-wp_wsal_options.table.gz (15/15): adding to final database dump
+0010.791 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db.gz: finished writing out complete database file (184 KB)
+0010.799 (0) Total database tables backed up: 15 (backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db.gz, size: 208582, sha256)
+0010.802 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0010.803 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0010.803 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-others.zip: others: This file has not yet been successfully uploaded: will queue
+0010.804 (0) backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db.gz: db: This file has not yet been successfully uploaded: will queue
+0010.804 (0) Saving backup history. Total backup size: 27 MB
+0010.807 (0) Requesting upload of the files that have not yet been successfully uploaded (4)
+0010.808 (0) Cloud backup selection (1/1): s3 with instance (1/1) (last)
+0010.809 (0) Beginning dispatch of backup to remote (s3) (instance identifier s-2ae4182ee1b43df5038e8a53f8cd87f6)
+0011.360 (0) S3 upload (): backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip (chunks: 3) -> s3://cdn.thedesignpeople.net/mainwp/backups/backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip
+0011.404 (0) S3 chunked upload: got multipart ID: KLh5qc7WMz8i0DspxC7822U1y4vwHJ0SiuNIp5qHQILn7o3AubVrdDEBVDwN7rx_0VJaPUEiRHyrNjuTgU_TxaOo_qBqFYaMWQRVPS8MbP0UklKW3_HxvGMoRSvAW2q9
+0011.865 (0) S3 chunked upload: 33.3 % uploaded (1, "155d184fc0494b4e2fea186714dc627c")
+0012.131 (0) S3 chunked upload: 66.7 % uploaded (2, "436817026c03362057dd4056ae48bdc9")
+0012.387 (0) S3 chunked upload: 100 % uploaded (3, "4253b94eb1e9000f39dd9cb7e263aa79")
+0012.389 (0) S3 upload: all chunks uploaded; will now instruct S3 to re-assemble
+0012.516 (0) S3 upload (plugins0): re-assembly succeeded
+0012.517 (0) Recording as successfully uploaded: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip
+0012.522 (0) Deleting local file: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-plugins.zip: OK
+0012.523 (0) S3 upload (): backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-themes.zip (chunks: 3) -> s3://cdn.thedesignpeople.net/mainwp/backups/backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-themes.zip
+0012.562 (0) S3 chunked upload: got multipart ID: 4y.EC0OzTWWLL0gvHAhvmF.x.gWdS162G2mJiRZB6rEad25ueeytMO8gy8EO7nZ6CPdmFajg1KgZxDe5WzkqU8we5qZKCoEP4Hj0KbGhTJBSFkwaQbS5vLZ5AMlxX3e1
+0012.850 (0) S3 chunked upload: 33.3 % uploaded (1, "2d3f598c1be1fba40024efe8d59f3d8b")
+0013.205 (0) S3 chunked upload: 66.7 % uploaded (2, "b7333eca4ec8edde38bfb1c163259028")
+0013.426 (0) S3 chunked upload: 100 % uploaded (3, "e1a1385f60a8dfc39cc4a656a8f4a5ef")
+0013.427 (0) S3 upload: all chunks uploaded; will now instruct S3 to re-assemble
+0013.627 (0) S3 upload (themes0): re-assembly succeeded
+0013.627 (0) Recording as successfully uploaded: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-themes.zip
+0013.634 (0) Deleting local file: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-themes.zip: OK
+0013.635 (0) S3 upload (): backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-others.zip (chunks: 1) -> s3://cdn.thedesignpeople.net/mainwp/backups/backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-others.zip
+0013.749 (0) S3 regular upload: success
+0013.750 (0) Recording as successfully uploaded: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-others.zip
+0013.751 (0) Deleting local file: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-others.zip: OK
+0013.752 (0) S3 upload (): backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db.gz (chunks: 1) -> s3://cdn.thedesignpeople.net/mainwp/backups/backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db.gz
+0013.884 (0) S3 regular upload: success
+0013.885 (0) Recording as successfully uploaded: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db.gz
+0013.887 (0) Deleting local file: backup_2018-11-30-0523_Benjamin_Young_Realtor_5278dfeb7acf-db.gz: OK
+0013.888 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=4
+0013.888 (0) Number of backup sets in history: 2; groups (db): 1
+0013.889 (0) Examining (for databases) backup set with group_id=0, nonce=5278dfeb7acf, datestamp=1543555424 (Nov 30 2018 05:23:44)
+0013.889 (0) This backup set is the backup set just made, so will not be deleted.
+0013.889 (0) Examining (for databases) backup set with group_id=0, nonce=99c912c7471e, datestamp=1543555370 (Nov 30 2018 05:22:50)
+0013.889 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0013.890 (0) Number of backup sets in history: 2; groups (files): 1
+0013.890 (0) Examining (for files) backup set with nonce=5278dfeb7acf, datestamp=1543555424 (Nov 30 2018 05:23:44)
+0013.890 (0) This backup set is the backup set just made, so will not be deleted.
+0013.890 (0) This backup set is the backup set just made, so will not be deleted.
+0013.890 (0) This backup set is the backup set just made, so will not be deleted.
+0013.890 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0013.891 (0) Examining (for files) backup set with nonce=99c912c7471e, datestamp=1543555370 (Nov 30 2018 05:22:50)
+0013.891 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0013.891 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0013.892 (0) Resume backup (5278dfeb7acf, 0): finish run
+0013.893 (0) Decremented the semaphore (fd) by 1
+0013.894 (0) Semaphore (fd) unlocked
+0013.894 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0013.896 (0) No email will/can be sent - the user has not configured an email address.
+0013.896 (0) The backup apparently succeeded and is now complete

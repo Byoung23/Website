@@ -1,0 +1,3 @@
+Post Information by Category
+Integrate your custom HTML with Wordpress categories.<br>
+<i>Developed by: <span style="color:green;">Jermaine B. Pajarito</i>

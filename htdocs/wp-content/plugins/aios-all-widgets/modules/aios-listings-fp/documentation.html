@@ -1,0 +1,252 @@
+<style type="text/css">
+body {
+	width:630px;
+	height:596px;
+	padding: 0;
+	margin: 4px 0 0 4px;
+	overflow: hidden;
+}
+#instruction-container {
+	width: 97%;
+	height: 97%;
+	background: #fff;
+	
+	font-family: calibri;
+}
+#instruction-left {
+	width: 50%;
+	float: left;
+	height: 100%;
+	overflow: auto;
+}
+	#instruction-left h2 {
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);	
+		width: 200px;
+		text-align: center;
+		background: #222222;
+		color:#fff;
+		position: absolute;
+		top: 238px;
+		left: -235px;
+		padding: 10px 170px;
+	}
+	#instruction-left ul {	
+		margin-left: 25px;
+	}
+#instruction-right {
+	float: left;
+	width: 48%;
+}
+	#instruction-right h2 {
+		width: 195px;
+		text-align: center;
+		background: #222222;
+		color:#fff;
+		position: absolute;
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		margin-left: 3px;
+
+	}
+	#instruction-right .details {
+		margin: 22px 10px 0 60px;
+		overflow-y: auto;
+		height:97%;
+	}
+	#instruction-right #instruction-up {
+		height: 46%;
+		border-bottom: 1px solid #ccc;
+		width: 296px;
+	}
+		#instruction-right #instruction-up h2 {
+			top: 103px;
+			left: 209px;
+			padding: 10px 26.5px;
+			
+		}	
+	#instruction-right #instruction-down h2 {
+		top: 386px;
+		left: 212px;
+		padding: 10px 23.5px;
+	}	
+</style>
+<div id="instruction-container">
+	<div id="instruction-left">
+	<h2>Lists of Shorcodes</h2>
+	<ul style="font-family:open sans,sans-serif; font-size:12px; list-style:none; float:left; width:77%;">
+		<li><b>Loop</b></li>
+		<li style="padding:2px; margin-left:10px;"><strong>[<span style="color:#008000">aios_start_loop</span>]</strong><br />
+		<em>Start of Loop</em></li>
+		<li style="padding:2px; margin-left:10px ;"><strong>[<span style="color:#008000">aios_end_loop</span>]</strong><br />
+		<em>End of Loop</em></li>
+		
+		<li><b>Title and Description</b></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_title</span>]</strong><br />
+			<em>Listing title</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_description</span>]</strong><br />
+			<em>Listing description</em>
+		</li>
+		
+		<li><b>Featured Image</b></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_featured_image</span>]</strong><br />
+			<em>Listing featured image</em>
+		</li>
+		
+		<li><b>Permalink</b></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_url</span>]</strong><br />
+			<em>Listing url/permalink</em>
+		</li>
+		
+		<li><b>Price</b></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_list_price</span>]</strong><br />
+			<em>Listing list price</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_sold_price</span>]</strong><br />
+			<em>Listing sold price</em>
+		</li>
+		
+		<li><b>Address</b></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_street_no</span>]</strong><br />
+			<em>Listing street number</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_street_name</span>]</strong><br />
+			<em>Listing street name</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_city</span>]</strong><br />
+			<em>Listing City</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_state</span>]</strong><br />
+			<em>Listing State</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_province</span>]</strong><br />
+			<em>Listing province</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_zipcode</span>]</strong><br />
+			<em>Listing zip code</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_country</span>]</strong><br />
+			<em>Listing country</em>
+		</li>
+		
+		<li><b>Details</b></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_mls_no</span>]</strong><br />
+			<em>Listing MLS number</em>
+		</li>
+
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_bedrooms</span>]</strong><br />
+			<em>Listing number of bedrooms</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_bathrooms</span>]</strong><br />
+			<em>Listing number of bathrooms</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_garage_spaces</span>]</strong><br />
+			<em>Listing number of garage spaces</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_year_built</span>]</strong><br />
+			<em>Listing year built</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_building_size</span>]</strong><br />
+			<em>Listing building size</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_lot_size</span>]</strong><br />
+			<em>Listing lot size</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_mls_no</span>]</strong><br />
+			<em>Listing MLS number</em>
+		</li>
+		
+		<li><b>Open House #1</b></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_open_house_date_1</span>]</strong><br />
+			<em>Listing open house #1 date</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_open_house_datetime_1</span>]</strong><br />
+			<em>Listing open house #1 date and time</em>
+		</li>
+		
+		<li><b>Open House #2</b></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_open_house_date_2</span>]</strong><br />
+			<em>Listing open house #2 date</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_open_house_datetime_2</span>]</strong><br />
+			<em>Listing open house #2 date and time </em>
+		</li>
+		
+		<li><b>Open House #3</b></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_open_house_date_3</span>]</strong><br />
+			<em>Listing open house #3 date</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_open_house_datetime_3</span>]</strong><br />
+			<em>Listing open house #3 date and time</em>
+		</li>
+		
+		<li><b>Others</b></li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_property_type</span>]</strong><br />
+			<em>Property Types</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_property_status</span>]</strong><br />
+			<em>Property Statuses</em>
+		</li>
+		<li style="padding:2px; margin-left:10px">
+			<strong>[<span style="color:#008000">listing_property_features</span>]</strong><br />
+			<em>Property Features</em>
+		</li>
+	</ul>
+	</div>
+	<div id="instruction-right">
+		<div id="instruction-up">
+			<h2>Instruction</h2>
+			<div class="details">
+				<p>
+				1. You need to configure the widget based on your preference.
+				On the HTML part, put the static html and change the required data using the list of shortcodes below.
+				</p>
+				<p>
+				2. You need to put the repeated HTML part inside the loop.<br/>
+				Sample:<br/>
+				[aios_start_loop]<br/>
+					-insert repeated HTML part here-<br/>
+				[aios_end_loop]
+				</p>
+			</div>
+		</div>
+		<div id="instruction-down">
+			<div class="details">
+				<h2>Sample HTML</h2><br/>&lt;div&gt;Widget title&lt;/div&gt;<br/> [aios_start_loop]<br/> &lt;div&gt;&lt;h2&gt;&lt;a href=&quot;[listing_url]&quot;&gt;[listing_title]&lt;/a&gt;&lt;h2&gt;&lt;/div&gt;&lt;br/&gt;<br/> 
+				&lt;div&gt;&lt;img src="[listing_featured_image]" /&gt;&lt;/div&gt;<br/> &lt;div&gt; [listing_list_price]&lt;/div&gt;[aios_end_loop]<br/>&lt;/div&gt;
+			</div>
+		</div>
+	</div>
+	<div style="clear:both"></div>
+
+</div>

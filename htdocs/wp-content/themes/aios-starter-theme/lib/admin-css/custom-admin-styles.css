@@ -1,0 +1,89 @@
+/* 404 Page Settings */
+
+.admin-error-page-wrap {
+	position: relative;
+	max-width: 750px;
+	font-size: 13px;
+}
+
+	.admin-error-page-contents {
+		position: relative;
+		padding: 20px 0;
+	}
+
+		.admin-error-row {
+			position: relative;
+			margin: 10px 0 20px;
+		}
+
+			.admin-error-row:after {
+				clear: both;
+				content: '';
+				display: block;
+			}
+
+
+			.admin-error-row strong {
+				display: block;
+				font-weight: 600;
+				font-size: 15px;
+				margin: 2px 0 15px;
+			}
+			
+			.admin-error-row .admin-error-col {
+				width: 49%;
+				float: left;
+			}
+
+			.admin-error-row .admin-error-col + .admin-error-col {
+				float: right;
+			}
+
+			.admin-error-row table {
+				width: 100%;
+			}
+
+				.admin-error-row table td {
+					vertical-align: top;
+					width: 50%
+				}
+		
+		.admin-error-row input[type='text'],
+		.admin-error-row textarea {
+			width: 100%;
+			display: block;
+			resize: none;
+		}
+
+		.admin-error-row textarea {
+			height: 100px;
+		}
+	
+	/* Photo holder */
+	.admin-error-photo-option {
+		position: relative;
+		padding: 5px;
+		min-height: 210px;
+		text-align: center;
+	}
+
+		.admin-error-photo-option img {
+			width: 100%;
+			height: auto;
+			max-width: 250px;
+			margin: 0 auto;
+			display: block;
+		}
+
+	.admin-error-controls {
+		position: relative;
+		margin: 10px 0;
+		text-align: center;
+	}
+
+		.admin-error-controls a {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 5px;
+		}
+
